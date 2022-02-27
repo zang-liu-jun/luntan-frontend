@@ -1,0 +1,88 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path":"pages/article/articleList",
+			"style":{
+				"navigationBarBackgroundColor":"#007AFF",
+				"navigationBarTextStyle":"white",
+				"navigationBarTitleText":"推荐",
+				"enablePullDownRefresh":true
+			}
+		},
+		{
+			"path":"pages/user/userInfo",
+			"style":{
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path":"pages/article/publish",
+			"style":{
+				"navigationBarBackgroundColor":"#007AFF",
+				"navigationBarTextStyle":"white",
+				"navigationBarTitleText":"发帖"
+			}
+		},
+		{
+			"path":"pages/article/articleDetail",
+			"style":{
+				"navigationBarBackgroundColor":"#007AFF",
+				"navigationBarTextStyle":"white",
+				"navigationBarTitleText":""
+			}
+		},
+		{
+			"path":"pages/user/register",
+			"style":{
+				"navigationBarBackgroundColor":"#007AFF",
+				"navigationBarTextStyle":"white",
+				"navigationBarTitleText":"注册"
+			}
+		},
+		{
+			"path":"pages/user/login",
+			"style":{
+				"navigationBarBackgroundColor":"#007AFF",
+				"navigationBarTextStyle":"white",
+				"navigationBarTitleText":"登录"
+			}
+		},
+			{
+				"path":"pages/others/settings",
+				"style":{
+					"navigationBarBackgroundColor":"#007AFF",
+					"navigationBarTextStyle":"white",
+					"navigationBarTitleText":"设置"
+				}
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"animationType":"pop-in",
+		"animationDuration":300
+	},
+	"tabBar": {
+		"list":[
+			{
+				"pagePath":"pages/article/articleList",
+				"text":"首页",
+				"iconPath":"static/img/tabbar/home.png",
+				"selectedIconPath":"static/img/tabbar/homefull.png"
+			},
+			{
+				"pagePath":"pages/article/publish",
+				"text":"发表",
+				"iconPath":"static/img/tabbar/pub.png"
+			},
+			{
+				"pagePath":"pages/user/userInfo",
+				"text":"我的",
+				"iconPath":"static/img/tabbar/me.png",
+				"selectedIconPath":"static/img/tabbar/mefull.png"
+			}
+		]
+	}
+}
